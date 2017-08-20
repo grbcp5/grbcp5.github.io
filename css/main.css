@@ -1,0 +1,50 @@
+.sign-in-button-text {
+  margin-left: 7px;
+}
+
+.sign-out-button-text {
+  margin-left: 7px;
+}
+
+.homeLink {
+	color: inherit;
+	text-decoration: none;
+}
+
+.button-container {
+	text-align: center;
+}
+
+.mdl-cell {
+	
+}
+
+.cell-container {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.direct-content-cell {
+	box-shadow: 2px 2px 5px #888888;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+
+.mdl-grid {
+	justify-content: center;
+}
+
+#loading-screen {
+	z-index: 1000;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	padding-top: 50px;
+}
