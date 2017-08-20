@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
   <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="./event.css" />
 </head>
 <body>
 
@@ -48,7 +49,60 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
+    <div class="page-content">
+    <!-- Your content goes here -->
+
+  <div class="mdl-grid" style="width:100%" id="layoutGrid">
+
+  <div class="mdl-cell mdl-cell--6-col" id="CreateNewEventCell">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="event_title mdl-card__title">
+        <h2 class="mdl-card__title-text" id="eventTitle"></h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <ul class="demo-list-item mdl-list">
+          <li class="mdl-list__item">
+        Location:
+        <button type="button" class="mdl-chip">
+          <span class="mdl-chip__text">
+            <span id="locationText"></span>
+          </span>
+        </button>
+          </li>
+          <li class="mdl-list__item">
+            <a href="" id="eventLinkText"></a>
+          </li>
+        </ul>
+
+      </div>
+    </div> <!-- Demo card wide -->
+  </div> <!-- mdl-cell-6 -->
+
+  <div class="mdl-cell mdl-cell--6-col">
+  <div class="btn-container">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored event-btn"
+        id="requestRideBtn">
+  Request a ride
+</button>
+  </div>
+  </div>
+
+<div class="mdl-cell mdl-cell--6-col">
+  <div class="btn-container">
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored event-btn"
+        id="offerDriveBtn">
+  Offer to Drive
+</button>
+  </div>
+  </div>
+
+
+<div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>
+
+    </div>
   </main>
 </div>
 
@@ -71,7 +125,7 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <!-- JS Source -->
   <script src="/js/index.js"></script>
- 
+  <script src="./event.js"></script> 
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+.demo-card-wide.mdl-card {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  background-size: cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.event_title {
+  background: url(
+    'https://www.collegeatlas.org/wp-content/uploads/2014/06/Top-Party-Schools-main-image.jpg'
+  ) center;
+}

@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
   <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="./profile.css" />
 </head>
 <body>
 
@@ -48,7 +49,67 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
+
+  <div class="mdl-grid" style="width:100%" id="layoutGrid">
+  
+  <div class="mdl-cell mdl-cell--6-col">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title" id="ProfileCardTitle">
+        <h2 class="mdl-card__title-text">Profile</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+      <!-- Contact Chip -->
+        <span class="mdl-chip mdl-chip--contact">
+          <span id="profile_link_btn"> 
+            <span class="mdl-chip__contact mdl-color--blue mdl-color-text--white"><i class="sign-in-icon fa fa-facebook-square"></i>
+              <span id="Contact_chip_initial"></span>
+            </span>
+            <span class="mdl-chip__text" id="profile_name_lbl"></span>
+          </span>
+        </span>
+        </br></br>Events attended: <span id="events_attended_lbl"></span>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="log_out_btn">
+          Log Out
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="eventsOwned"></div>
+
+  <div class="mdl-cell mdl-cell--6-col" id="CreateNewEventCell">
+    <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="event_title mdl-card__title">
+        <h2 class="mdl-card__title-text">New Event</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <ul class="demo-list-item mdl-list">
+          <li class="mdl-list__item">
+            An event can be anything from a stellar frat party to a family 
+            reunion. 
+          </li>
+          <li class="mdl-list__item">
+            Start an event to let any one request one of your event drivers 
+            to come and pick them up.
+          </li>
+          <li class="mdl-list__item">
+            Just give us a name and a location and we'll get the party 
+            started for you.  
+          </li>
+        </ul>
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="/CreateEvent">
+          Create an Event
+        </a>
+      </div>
+    </div> <!-- Demo card wide -->
+  </div> <!-- mdl-cell-6 -->
+
+  </div>
+
   </main>
 </div>
 
@@ -71,7 +132,7 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <!-- JS Source -->
   <script src="/js/index.js"></script>
- 
+  <script src="profile.js"></script> 
 
 </body>
 </html>

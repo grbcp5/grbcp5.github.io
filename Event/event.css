@@ -1,0 +1,37 @@
+#layoutGrid {
+  justify-content: center;
+}
+
+.demo-card-wide {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  background-size: cover;
+}
+
+.mdl-chip {
+  margin-left: 5px;
+}
+
+.event_title {
+  background: url(
+    'https://www.collegeatlas.org/wp-content/uploads/2014/06/Top-Party-Schools-main-image.jpg'
+  ) center;
+}
+
+.btn-container {
+  width: 75%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.event-btn {
+  width: 100%;
+}
+
+

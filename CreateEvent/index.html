@@ -32,7 +32,7 @@
       <div class="mdl-layout-spacer"></div>
       <!-- Accent-colored raised button with ripple -->
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="SignInButton">
-    <span id="SignInText"></span> <i class="sign-in-icon fa fa-facebook-square"></i>
+    <span id="SignInText"></span> <i clas="sign-in-icon fa fa-facebook-square"></i>
   </button>
     </div>
   </header>
@@ -48,7 +48,13 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
+    <div class="page-content">
+    <!-- Your content goes here -->
+    <p>Event Owner:<span id="EventOwnerText">
+    <p>Event Name:<input type="text" id="EventNameInput"></p>
+    <p>Event Location:<input type="text" id="EventLocationInput"></p>
+    <input type="submit" value="Create Event" id="SubmitBtn">
+    </div>
   </main>
 </div>
 
@@ -71,7 +77,7 @@
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <!-- JS Source -->
   <script src="/js/index.js"></script>
- 
+  <script src="./createevent.js"></script> 
 
 </body>
 </html>
